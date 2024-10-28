@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1.2rem;
+}
+
+/* Landing Section */
+#landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 34, 65, 0.61), rgba(0, 34, 65, 0.61)), url("./images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffffff;
+    padding: 50px 0;
+    background: linear-gradient(rgba(0, 34, 65, 0.61), rgba(0, 34, 65, 0.61)), url("./images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Tools Section */
+#tools {
+    background-color: gray;
+    padding: 50px 0;
+}
+
+.tool-image img {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.tool-image:hover img {
+    transform: scale(1.1);
+}
+
+.row.text-center {
+    justify-content: center;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: aquamarine;
+    padding: 50px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Social Links */
+.social-links img {
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #ffffff;
+}

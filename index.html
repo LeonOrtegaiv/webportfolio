@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Developer Portfolio</title>
+        <!-- Bootstrap CSS 5.0.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#landing">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#landing">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Landing Section -->
+        <section id="landing" class="container-fluid text-center text-white py-5">
+            <h1>Roberto Leon A. Ortega IV</h1>
+            <h2>Full Stack Web Developer</h2>
+            <p>Hello, I'm a passionate developer with expertise in full stack development.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container my-5">
+            <h2>My Projects:</h2>
+            <p>Explore some of the projects I have worked on:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Connectify </h5>
+                            <p class="card-text">Connectify is a comprehensive social networking platform developed to help users build meaningful connections. Designed with both a robust backend using Node.js and a dynamic frontend in React, it offers features such as real-time messaging, customizable profiles, and privacy controls. This project showcases my full-stack skills in creating scalable, user-centric applications with a focus on performance and security.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">EventEase</h5>
+                            <p class="card-text"> EventEase is an event management application that simplifies event organization for individuals and businesses. Built using a MERN stack (MongoDB, Express.js, React, and Node.js), it allows users to create, customize, and manage event details, with options for guest invites, ticketing, and live updates. This project highlights my ability to build full-stack applications that deliver a smooth, responsive user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">ShopSmart</h5>
+                            <p class="card-text"> ShopSmart is a powerful e-commerce platform designed to help small businesses manage their online stores with ease. Utilizing Django for the backend and React for the frontend, ShopSmart provides inventory tracking, order management, and secure payment options. Through this project, I demonstrated my skills in building feature-rich, full-stack applications with an emphasis on data integrity and secure transactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="container mt-5">
+            <h2 class="text-center">Tools I Use</h2>
+            <p class="text-center">Here are some of the tools I work with regularly:</p>
+
+            <div class="row text-center mt-4">
+                <!-- Tool 1: GitHub -->
+                <div class="col-sm-4">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" alt="GitHub">
+                        
+                    </a>
+                </div>
+                
+                <!-- Tool 2: Figma -->
+                <div class="col-sm-4">
+                    <a href="https://figma.com/" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/figma.png" alt="Figma">
+                       
+                    </a>
+                </div>
+                
+                <!-- Tool 3: Bootstrap -->
+                <div class="col-sm-4">
+                    <a href="https://getbootstrap.com/" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/bootstrap.png" alt="Bootstrap">
+                        
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="container mt-5">
+            <h2 class="text-center">Message Me</h2>
+            <p class="text-center">Feel free to reach out through the form or connect with me on social media!</p>
+
+            <!-- Contact Form -->
+            <form class="contact-form mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <!-- Social Media Links -->
+            <div class="social-links text-center mt-4">
+                <p>Contact me on:</p>
+                <a href="https://www.facebook.com/roberto.ortegaiv" target="_blank" class="me-3">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" class="me-3">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Bootstrap JavaScript 5.0.2 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
